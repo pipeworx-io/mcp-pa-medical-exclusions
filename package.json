@@ -1,12 +1,20 @@
 {
   "name": "@pipeworx/mcp-pa-medical-exclusions",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "Pennsylvania Department of Human Services (DHS) Medicheck Precluded Providers List screening — fleet #3277, the fifth state exclusion pack after mcps/ny-omig-exclusions (#2788), mcps/ca-medical-exclusions (#2805), mcps/tx-medical-exclusions (#2809) and mcps/fl-medical-exclusions.",
   "type": "module",
-  "main": "src/index.ts",
-  "types": "src/index.ts",
+  "main": "lib/index.js",
+  "exports": {
+    ".": "./lib/index.js",
+    "./tools.json": "./tools.json",
+    "./package.json": "./package.json"
+  },
   "bin": {
     "mcp-pa-medical-exclusions": "bin/cli.js"
+  },
+  "files": ["bin/", "lib/", "tools.json", "server.json"],
+  "engines": {
+    "node": ">=18"
   },
   "keywords": ["mcp", "mcp-server", "model-context-protocol", "pipeworx", "pa-medical-exclusions"],
   "license": "MIT",
@@ -14,19 +22,12 @@
     "type": "git",
     "url": "git+https://github.com/pipeworx-io/mcp-pa-medical-exclusions.git"
   },
-  "scripts": {
-    "typecheck": "tsc --noEmit"
-  },
-  "dependencies": {
-    "@modelcontextprotocol/sdk": "^1.30.0",
-    "tsx": "^4.19.0"
-  },
-  "devDependencies": {
-    "typescript": "^5.9.3",
-    "@cloudflare/workers-types": "^4.20260405.1"
-  },
+  "mcpName": "io.github.pipeworx-io/pa-medical-exclusions",
   "pipeworx": {
-    "sourceHash": "v1-ae08340798ae69653ef98b1f47055e7e61f322c9a031a63f09e3273c1b3ccd03",
-    "sourceCommit": "514e3efb42b8d81082c07e01d3ae7654bbf91f52"
+    "mode": "gateway",
+    "slug": "pa-medical-exclusions",
+    "gatewaySlug": "pa-medical-exclusions",
+    "sourceHash": "v1-57900fe92ecd8812be7421de9207bfe6836cf3b574e863ffe800158aaa3dfbc7",
+    "sourceCommit": "6bae4cfa7b6a73bbe014dc8820a19c80c842b21e"
   }
 }

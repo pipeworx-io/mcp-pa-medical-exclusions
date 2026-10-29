@@ -3,7 +3,7 @@
   "name": "io.github.pipeworx-io/pa-medical-exclusions",
   "title": "Pa Medical Exclusions",
   "description": "Pennsylvania Department of Human Services (DHS) Medicheck Precluded Providers List screening…",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "websiteUrl": "https://pipeworx.io/packs/pa-medical-exclusions",
   "repository": {
     "url": "https://github.com/pipeworx-io/mcp-pa-medical-exclusions",
